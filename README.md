@@ -30,6 +30,7 @@
 
 - 배경에 이미지 넣기
   : 그림 깔고 내용 위치잡기
+
   ```css
   .main-top-banner a {
     display: block;
@@ -41,7 +42,9 @@
     background-position: center;
   }
   ```
+
   - 이게 더 좋아요
+
   ```css
   .main-top-banner a {
     display: block;
@@ -49,5 +52,24 @@
     height: 100%;
     background: url("../images/br.png") no-repeat center;
     background-size: cover;
+  }
+  ```
+
+  - flex를 활용시 참고 사항
+    : 기본적으로 flex를 적용하면 줄내림이 없음
+
+  ```css
+  .box {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  ```
+
+  : 필요시 100% 넘는 item들이 있을 때 줄내림 하려면
+
+  ```css
+  .box {
+    display: flex;
+    flex-wrap: wrap;
   }
   ```
